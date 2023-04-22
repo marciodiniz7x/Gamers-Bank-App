@@ -1,0 +1,612 @@
+* {
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./images/background.png);
+    /* background: linear-gradient(45deg, rgb(82, 14, 172),
+    rgb(255, 77, 6)); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+   
+    font-family: 'BR Cobane';
+    font-weight: 300;
+    color: white;
+    overflow: hidden;
+}
+
+div.fundo1 {
+    left: -100vh;
+    top: -62vh;
+    z-index: -99;
+    position: absolute;
+    width: 220vh;
+    height: 100vh;
+    background-color: #fd6022;
+    border-radius: 100%;
+}
+div.fundo2 {
+    left: 50vh;
+    top: -62vh;
+    z-index: -99;
+    position: absolute;
+    width: 220vh;
+    height: 100vh;
+    background-color: #fd6022;
+    border-radius: 100%;
+}
+
+.titulo {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    font-family: sans-serif;
+}
+
+.aparelhos {
+    display: flex;
+    justify-content: center;
+    row-gap: 1px;
+}
+
+/* ///////// */
+/* Tela Principal */
+.aparelho {
+    overflow: hidden;
+    margin-top: 20px;
+    width: 400px;
+    height: 820px;
+    background-color: #1a1d30;
+    border-radius: 45px;
+}
+
+/* Ícones no topo */
+.top-icons {
+    top: 15px;
+    overflow: hidden;
+    position: relative;
+    /* border: 1px solid white; */
+    width: 320px;
+    height: 22px;
+}
+.wifi {
+    position: absolute;
+    width: 26px;
+    margin-top: 2px;
+}
+.dados {
+    position: absolute;
+    width: 20px;
+    margin-left: 35px;
+    margin-top: 1px;
+}
+.bluet {
+    position: absolute;
+    width: 18px;
+    margin-left: 70px;
+    margin-top: 1px;
+}
+.hora {
+    position: absolute;
+    margin-left: 226px;
+    margin-top: 4px;
+    color: white;
+    font-size: 16px;
+}
+.hora2 {
+    position: absolute;
+    margin-left: 226px;
+    margin-top: 4px;
+    color: white;
+    font-size: 16px;
+}
+.bateria {
+    position: absolute;
+    margin-top: 3px;
+    width: 30px;
+    margin-left: 286px;
+}
+
+/* Ícones Meio */
+.tela1 {
+    position: relative;
+    margin-top: 45px;
+    width: 370px;
+    height: 635px;
+    /* border: 1px solid rgb(235, 2, 235); */
+}
+
+.saudacao {
+    position: relative;
+    width: 370;
+    height: 90px;
+    padding: 20px;
+    /* border: 1px solid coral; */
+}
+.data {
+    color: #6C7496;
+    font-size: 14px;
+}
+.voce {
+    margin-top: 10px;
+    color: white;
+    font-size: 20px;
+}
+.top-menu {
+    display: flex;
+    width: 130px;
+    height: 30px;
+
+    margin-top: -40px;
+    margin-left: 200px;
+}
+.search-icon {
+    width: 30px;
+    height: 30px;
+    top: 0;
+    bottom: 0;
+    background-image: url(./images/searchIcon.png);
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.notification-icon {
+    width: 30px;
+    height: 30px;
+    top: 0;
+    bottom: 0;
+    background-image: url(./images/notificationIcon.png);
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.settings-icon {
+    width: 30px;
+    height: 30px;
+    top: 0;
+    bottom: 0;
+    background-image: url(./images/settingsIcon.png);
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.saldo {
+    position: relative;
+    width: 370;
+    height: 190px;
+    margin-top: 5px;
+    /* border: 1px solid rgb(47, 255, 158); */
+}
+.valor-saldo {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Bebas Neue';
+    
+    color: #20c911;
+}
+.texto-saldo {
+    text-align: center;
+    color: #6C7496;
+    margin-top: 1px;
+    font-family: 'Br Cobane';
+}
+
+.renda-gasto {
+    align-items: center;
+    margin-top: 20px;
+    display: flex;
+    position: relative;
+    width: 365px;
+    height: 90px;
+    /* border: 1px solid red; */
+
+}
+.gasto {
+    width: 150px;
+    height: 70px;
+    background-color: #142450;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.flex-gasto {
+    align-items: center;
+    justify-items: left;
+    display: flex;
+    width: 122px;
+    height: 70px;
+    background-color: #142450;
+    border-radius: 20px;
+}
+
+.icone-gasto {
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #2c2e68;
+    background-image: url(./images/setaRed.png);
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+
+.texto-gasto {
+    color: #6C7496;
+    font-size: 14px;
+}
+.valor-gasto {
+    color: rgb(250, 100, 100);
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.renda {
+    width: 150px;
+    height: 70px;
+    background-color: #142450;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.flex-renda {
+    align-items: center;
+    justify-items: left;
+    display: flex;
+    width: 122px;
+    height: 70px;
+    background-color: #142450;
+    border-radius: 20px;
+}
+
+.icone-renda {
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #2c2e68;
+    background-image: url(./images/setaGreen.png);
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+
+.texto-renda {
+    color: #6C7496;
+    font-size: 14px;
+}
+.valor-renda {
+    color: #20c911;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+/* Cards Menu */
+.flex-cards-menu {
+    display: flex;
+    width: 340px;
+    height: 70px;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.card-pix {
+    position: relative;
+    width: 75px;
+    height: 75px;
+    border-radius: 7px;
+    background-color: #fd6022;
+    background-image: url(./images/card-pix.png);
+    background-repeat: no-repeat;
+    background-position: bottom 20% left 10%;
+    background-size: 35%;
+    cursor: pointer;
+}
+.card-cartoes {
+    position: relative;
+    width: 75px;
+    height: 75px;
+    border-radius: 7px;
+    background-color: #fd6022;
+    background-image: url(./images/card-cartao.png);
+    background-repeat: no-repeat;
+    background-position: bottom 20% left 10%;
+    background-size: 40%;
+    cursor: pointer;
+}
+.pagar-boleto {
+    position: relative;
+    width: 75px;
+    height: 75px;
+    border-radius: 7px;
+    background-color: #fd6022;
+    background-image: url(./images/card-boleto.png);
+    background-repeat: no-repeat;
+    background-position: bottom 20% left 10%;
+    background-size: 40%;
+    cursor: pointer;
+}
+.investimentos {
+    position: relative;
+    width: 75px;
+    height: 75px;
+    border-radius: 7px;
+    background-color: #fd6022;
+    background-image: url(./images/card-investimentos.png);
+    background-repeat: no-repeat;
+    background-position: bottom 20% left 7%;
+    background-size: 40%;
+    cursor: pointer;
+}
+
+/* Ícones abaixo */
+.bot-area {
+    
+    margin-top: 12px;
+    width: 400px;
+    height: 110px;
+    background-color: #142450;
+}
+
+.bot-icones {
+    display: flex;
+    position: relative;
+    height: 110px;
+    width: 370px;
+    /* border: 1px solid rgb(103, 252, 4); */
+}
+
+.botIcon { 
+    
+}
+
+.traco-home {
+    z-index: 99;
+    width: 40px;
+    height: 4px;
+    background-color: #fd6022;
+    box-shadow: 1px 1px 10px 1px #fd6022;
+}
+.icone-home {
+    width: 50px;
+    height: 110px;
+    /* border: 1px solid rgb(127, 168, 255); */
+    background-image: url(./images/iconeHome.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+    cursor: pointer;
+}
+.icone-carteira {
+    width: 50px;
+    height: 110px;
+    /* border: 1px solid rgb(127, 168, 255); */
+    background-image: url(./images/iconeCarteiraCinza.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+    cursor: pointer;
+}
+.icone-rend {
+    width: 50px;
+    height: 110px;
+    /* border: 1px solid rgb(127, 168, 255); */
+    background-image: url(./images/iconeRendimentoCinza.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+    cursor: pointer;
+}
+.icone-perfil {
+    width: 50px;
+    height: 110px;
+    /* border: 1px solid rgb(127, 168, 255); */
+    background-image: url(./images/iconePerfilCinza.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+    cursor: pointer;
+}
+
+/* ///////// */
+/* Tela 02 */
+.aparelho2 {
+    overflow: hidden;
+    margin-top: 20px;
+    width: 400px;
+    height: 820px;
+    background-color: #1a1d30;
+    border-radius: 45px;
+}
+
+.cabec-area {
+    overflow: hidden;
+    margin-top: -30px;
+    width: 400px;
+    height: 300px;
+
+}
+
+.circle {
+  
+    width: 400px;
+    height: 300px;
+    background: linear-gradient(180deg, #6C7496, #444a69);
+    border-bottom-right-radius: 100%;
+}
+.logo {
+    text-align: right;
+    padding: 3px;
+    border: 1px solid;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    margin-top: -200px;
+    margin-left: 50px;
+}
+.nome-banco {
+    position: absolute;
+    margin-top: -175px;
+    margin-left: 150px;
+    font-size: 25px;
+}
+
+.form-area {
+    text-align: center;
+    width: 400px;
+    height: 400px;
+    /* border: 1px solid; */
+}
+
+.login-texto {
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.nome-area {
+    margin-top: 30px;
+    margin-left: 60px;
+    width: 280px;
+    height: 45px;
+    border-radius: 25px;
+    border: 1px solid #fd6022;
+    vertical-align: center;
+}
+.nome-texto {
+
+    margin-top: 14px;
+    color: #6C7496;
+}
+.nome-area-sobreposto {
+    
+    position: absolute;
+    margin-top: -31px;
+    margin-left: -140px;
+    width: 280px;
+    height: 45px;
+    border-radius: 25px;
+    border: 1px solid #fd6022;
+    background-color: #1a1d30;
+    vertical-align: center;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'BR Cobane';
+    font-weight: 300;
+    color: #6C7496;
+}
+
+.senha-area {
+    margin-top: 15px;
+    width: 280px;
+    height: 45px;
+    border-radius: 25px;
+    border: 1px solid #fd6022;
+    vertical-align: center;
+}
+.senha-texto {
+    margin-top: 14px;
+    color: #6C7496;
+}
+
+.senha-area-sobreposto {
+    position: absolute;
+    margin-top: -31px;
+    margin-left: -140px;
+    width: 280px;
+    height: 45px;
+    border-radius: 25px;
+    border: 1px solid #fd6022;
+    background-color: #1a1d30;
+    vertical-align: center;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'BR Cobane';
+    font-weight: 300;
+    color: #6C7496;
+}
+
+.entrar-area {
+    margin-top: 40px;
+    width: 280px;
+    height: 45px;
+    border-radius: 25px;
+    border: 1px solid #fd6022;
+    background-color: #fd6022;
+    
+    vertical-align: center;
+    cursor: pointer;
+}
+.entrar-texto {
+    margin-top: 14px;
+}
+
+.caixa {
+    margin-top: 10px;
+    display: flex;
+    width: 220px;
+   
+}
+.checkbox-texto {
+    margin-top: 3px;
+}
+
+.biometria-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 50px;
+    width: 280px;
+    height: 100px;
+    border-radius: 25px;
+    vertical-align: center;
+}
+.biometria-imagem {
+    width: 60px;
+    height: 60px;
+    background-image: url(./images/biometriaCor.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.biometria-texto {
+    margin-left: -20px;
+}
+
+.rodape-login {
+    display: flex;
+    margin-top: 5px;
+    width: 400px;
+    height: 105px;
+}
+.imagem1 {
+    opacity: 80%;
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+    background-image: url(./images/pensando.png);
+    background-size: 100%;
+}
+.nao-cliente {
+    margin-top: 30px;
+   
+}
+.abra-sua-conta {
+    padding: 8px;
+    height: 45px;
+    border-radius: 25px;
+   
+    background-color: #fd6022;
+    cursor: pointer;
+}
+
+.sumir {
+    opacity: 0%;
+}
